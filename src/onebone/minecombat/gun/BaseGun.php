@@ -44,7 +44,7 @@ abstract class BaseGun{
 		$this->color = $color;
 		self::$defaultAmmo = $ammo;
 		
-		if($maxRange < 0){
+		if($maxRange < 30){
 			throw new \Exception("Max range of gun cannot be smaller than 0");
 		}
 		$this->maxRange = $maxRange;
